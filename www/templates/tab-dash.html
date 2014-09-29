@@ -1,0 +1,10 @@
+<ion-view title="{{date | date:'M/d/yy - h a'}} ">
+    <ion-content class="padding">
+        <ion-list>
+            <ion-item ng-repeat="iqn in iqns" type="item-text-wrap" >
+                    <span>{{iqn.city}}</span>
+                    <span style="{{setColor(iqn.value)}}">{{iqn.value}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

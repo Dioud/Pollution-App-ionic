@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+.supinfo{
+    background-image: url('../img/SupInfoLogo.png');
+    background-size: 144px;
+    background-repeat: no-repeat;
+}
+
+.tab-item .icon {
+    display: block;
+    margin: 0 auto;
+    height: 44px;
+    font-size: 32px;
+}
