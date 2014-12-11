@@ -3,7 +3,7 @@ angular.module('starter.services', [])
     .factory('Iqns', function ($http) {
         return {
             all: function () {
-                var promise = $http({method: 'GET', url: 'http://iqn.enventeici.fr/'})
+                var promise = $http({method: 'GET', url: 'http://pollutionrails.dioud.com/'})
                     .success(function (data, status, headers, config) {
                         return data;
                     })
