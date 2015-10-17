@@ -1,9 +1,19 @@
-<ion-view title="{{date | date:'M/d/yy - h a'}} ">
+<ion-view title="Woldwide Pollution - {{date | date:'ha'}}">
     <ion-content class="padding">
+
         <ion-list>
-            <ion-item ng-repeat="iqn in iqns" type="item-text-wrap" >
-                    <span>{{iqn.city}}</span>
-                    <span style="{{setColor(iqn.value)}}">{{iqn.value}}</span>
+            <ion-item ng-repeat="iqn in iqns" type="item-text-wrap"
+                      style="text-align: center;font-weight: bold;"
+                      ng-class="{
+                      'p20': iqn.value <= 10,
+                       'p50': iqn.value > 10 && iqn.value <= 50,
+                        'p100': iqn.value > 50 && iqn.value <= 100,
+                         'p150': iqn.value > 100 && iqn.value <= 150,
+                          'p200': iqn.value > 150 && iqn.value <= 200,
+                          'p300': iqn.value > 200 && iqn.value <= 300,
+                           'p300': iqn.value > 300}">
+                <span>{{iqn.city}}</span>
+                <span style="float: right;">{{iqn.value}}</span>
             </ion-item>
         </ion-list>
     </ion-content>

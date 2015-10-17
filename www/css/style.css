@@ -1,5 +1,5 @@
 /* Empty. Add your own CSS if you like */
-.supinfo{
+.supinfo {
     background-image: url('../img/SupInfoLogo.png');
     background-size: 144px;
     background-repeat: no-repeat;
@@ -10,4 +10,36 @@
     margin: 0 auto;
     height: 44px;
     font-size: 32px;
+}
+
+.p20 {
+    background-color: #1bd8f4;
+}
+
+.p50 {
+    color: white;
+    background-color: #149867;
+}
+
+.p100 {
+    background-color: #fedd47;
+}
+
+.p150 {
+    background-color: #fd9840;
+}
+
+.p200 {
+    background-color: #ca0837;
+    color: white;
+}
+
+.p300 {
+    color: white;
+    background-color: #7c0224;
+}
+
+.p400 {
+    color: white;
+    background-color: #651197;
 }
